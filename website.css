@@ -29,7 +29,7 @@ h2 .logo {
     font-variant: small-caps;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: 2.75rem;
+    font-size: 3rem;
     text-wrap: nowrap;
 }
 
@@ -41,7 +41,7 @@ nav a {
     font-family: "Charm", cursive;
     font-weight: 525;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -103,9 +103,14 @@ footer {
     h2 .logo {
         position: absolute;
         left: 0;
+        font-size: 2.75rem;
         }
 
     header {
         justify-content: right;
+    }
+
+    nav a {
+        font-size: 1.3rem;
     }
 }
