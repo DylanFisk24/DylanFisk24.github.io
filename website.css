@@ -37,7 +37,7 @@ nav a {
     text-decoration: none;
     font-variant: small-caps;
     color:#ffffff;
-    padding: 1rem;
+    padding: 0.8rem;
     font-family: "Charm", cursive;
     font-weight: 525;
     font-style: normal;
@@ -109,9 +109,12 @@ footer {
     header {
         justify-content: right;
     }
+}
 
+@media screen and (min-width: 39rem) {
     nav a {
         font-size: 1.3rem;
+        padding: 1rem;
     }
 
     nav li {
