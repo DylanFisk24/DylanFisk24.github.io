@@ -41,7 +41,7 @@ nav a {
     font-family: "Charm", cursive;
     font-weight: 525;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -58,7 +58,7 @@ nav a:active {
 
 nav li {
     list-style-type: none;
-    margin-top: 1rem;
+    margin-top: 0;
     padding: 0.1rem;
     border-radius: 0.2rem;
 }
@@ -99,7 +99,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 42rem) {
+@media screen and (min-width: 41rem) {
     h2 .logo {
         position: absolute;
         left: 0;
@@ -112,5 +112,9 @@ footer {
 
     nav a {
         font-size: 1.3rem;
+    }
+
+    nav li {
+        margin-top: 1rem;
     }
 }
