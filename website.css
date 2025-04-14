@@ -1,0 +1,107 @@
+/* TEMPLATE FOR ALL PAGES */
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr 10fr .5fr;
+    grid-template-columns: auto;
+    /* background-color: #f1c1f6; */
+    background-image: linear-gradient(#fae2fc,#f1acf9);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    grid-row: 1 / 2;
+    background-color: #aa35b7;
+    display: flex;
+    justify-content: right;
+    border-bottom: 1px solid #717171;
+}
+
+h2 .logo {
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #000000;
+    color: #fcdfff;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: small-caps;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2.75rem;
+    text-wrap: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-variant: small-caps;
+    color:#ffffff;
+    padding: 1rem;
+    font-family: "Charm", cursive;
+    font-weight: 525;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 2px 1px 2px #131214;
+    text-decoration-line: underline;
+}
+
+nav a:active {
+    color:#f7afff;
+    text-shadow: 2px 1px 2px #131214;
+    text-decoration-line: underline;
+}
+
+nav li {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0.1rem;
+    border-radius: 0.2rem;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+footer {
+    grid-row: 3 / 4;
+    /* background-color: #eea5f6; */
+    color: white;
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    border-top: 1px solid #717171;
+}
+
+.email {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 2rem;
+}
+
+.linkedin {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 2rem;
+    filter: grayscale(100%);
+}
+
+@media screen and (min-width: 50rem) {
+    nav li {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 42rem) {
+    h2 .logo {
+        position: absolute;
+        left: 0;
+        }
+}
