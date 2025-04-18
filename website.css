@@ -166,7 +166,7 @@ div.homepage > p {
 }
 
 img.homepage {
-    height: 15rem;
+    height: 20rem;
     width: auto;
     margin-top: 1rem;
     border-radius: 50%;
@@ -221,6 +221,10 @@ img.homepage {
 @media screen and (max-width: 56rem) {
     div.homepage {
         border-radius: 0;
+    }
+
+    img.homepage {
+        height: 15rem;
     }
 }
 
