@@ -265,7 +265,10 @@ main.portfolio a {
 
 main.portfolio a:hover {
     text-decoration: underline;
-    
+}
+
+main.portfolio a:active {
+    color:#c739ff
 }
 
 div.portfolioheading {
@@ -281,7 +284,6 @@ main.portfolio h2 {
 div.portfoliop {
     grid-column: 2 / 3;
     margin: 1rem;
-    text-align: center;
 }
 
 div.feasibility {
@@ -333,5 +335,36 @@ div.lit {
         align-content: center;
         margin-top: 0;
         margin-bottom: 0.5rem;
+        text-align: center;
     }
+}
+
+/* END PORTFOLIO */
+
+/* CREATIVE WRITING PORTFOLIO */
+
+main.crwr {
+    display: grid;
+    grid-template-columns: .5fr 1fr 7fr 1fr 0.5fr;
+    grid-template-rows: auto 1fr 40px 1fr 40px 1fr 40px;
+}
+
+main.crwr > h1 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+div.wristsandwalls {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+div.takeupcross {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+div.poetry {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
 }
