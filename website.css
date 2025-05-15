@@ -74,8 +74,7 @@ footer {
     grid-row: 3 / 4;
     color: white;
     display: flex;
-    gap: 5%;
-    justify-content: center;
+    gap: 1%;
     align-items: center;
     height: 80px;
     border-top: 1px solid #717171;
@@ -85,6 +84,7 @@ footer {
     width: 2.5rem;
     height: 2.5rem;
     margin: 0rem;
+    margin-right: 2rem;
     padding: 0.2rem;
     background-color: #000000;
     border-radius: 50%;
@@ -94,7 +94,23 @@ footer {
     width: 2.5rem;
     height: 2.5rem;
     margin: 0rem;
+    margin-left: 0.5rem;
     filter: grayscale(100%);
+}
+
+div.imgat {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+p.imgat {
+    color: black;
+    font-size: 0.9rem;
+}
+
+ul.imgat {
+    color: black;
+    font-size: 0.9rem;
 }
 
 @media screen and (min-width: 50rem) {
@@ -234,6 +250,17 @@ img.homepage {
     }
 }
 
+@media screen and (max-width: 39rem) {
+    .hpbuttons > a h2 {
+        opacity: 1;
+        background-color: transparent;
+        margin: 0;
+        padding: 1rem;
+        bottom: 0;
+    }
+}
+
+
 /* END HOMEPAGE */
 
 /* PORTFOLIO */
@@ -296,19 +323,19 @@ div.feasibility {
 div.creative {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    background-image: linear-gradient(#d1fbde, #c6fae6);
+    background-image: linear-gradient(#f2faba, #f5f9af);
 }
 
 div.tutoring {
     grid-column: 2 / 3;
     grid-row: 6 / 7;
-    background-image: linear-gradient(#fac4d1, #fabbd0);
+    background-image: linear-gradient(#d1fbde, #c6fae6);
 }
 
 div.lit {
     grid-column: 2 / 3;
     grid-row: 8 / 9;
-    background-image: linear-gradient(#f2faba, #f5f9af);
+    background-image: linear-gradient(#ffeac2, #ffe1b2);
 }
 
 @media screen and (max-width: 43rem) {
@@ -531,17 +558,176 @@ div.graphiteright.pc {
         grid-column: 2 / 5;
         grid-row: 2 / 3;
         border-radius: 10px;
+        padding: 1rem;
+    }
+
+    div.wristsandwalls:hover {
+        box-shadow: 5px 5px 5px #717171;
+        transition-duration: 0.15s;
     }
 
     div.takeupcross {
         grid-column: 2 / 5;
         grid-row: 4 / 5;
         border-radius: 10px;
+        padding: 1rem;
+    }
+
+    div.takeupcross:hover {
+        box-shadow: 5px 5px 5px #717171;
+        transition-duration: 0.15s;
     }
 
     div.poetry {
         grid-column: 2 / 5;
         grid-row: 6 / 7;
         border-radius: 10px;
+        padding: 1rem;
+    }
+
+    div.poetry:hover {
+        box-shadow: 5px 5px 5px #717171;
+        transition-duration: 0.15s;
     }
 }
+
+/* END CREATIVE WRITING PORTFOLIO */
+
+/* ABOUT ME */
+
+main.aboutme > h1 {
+    text-align: center;
+    font-variant: small-caps;
+    margin: 1rem;
+}
+
+main.aboutme h2 {
+    margin: 1rem;
+}
+
+main.aboutme p {
+    margin: 1rem;
+}
+
+img.dyl-headshot {
+    float: right;
+    height: 20rem;
+    width: auto;
+    margin: 1rem;
+    border: 2px solid #511958;
+}
+
+@media screen and (max-width: 43rem) {
+    main.aboutme p {
+        font-size: 1.15rem
+    }
+    
+    img.dyl-headshot {
+        height: 15rem;
+        width: auto;
+    }
+}
+
+/* END ABOUT ME */
+
+/* RESUME */
+
+main.resume h1 {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+main.resume address {
+    text-align: center;
+}
+
+main.resume h2, main.resume h3, main.resume p {
+    margin: 1rem;
+}
+
+main.resume li {
+    margin: 0.5rem;
+}
+
+main.resume hr {
+    color: #511958;
+    background-color: #862790;
+    height: 4px;
+}
+
+main.resume a {
+    color: #9200cc;
+    text-decoration: none;
+}
+
+main.resume a:hover {
+    text-shadow: 1px 1px 1px #717171;
+}
+
+main.resume a:active {
+    color:#c739ff;
+}
+
+/* END RESUME */
+
+/* CONTACT */
+
+div.contactbg {
+    background-image: url(images/sunrise-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+}
+
+main.contact {
+    display: grid;
+    grid-template-columns: 0.08fr 1fr 0.08fr;
+    grid-template-rows: 40px auto 40px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+div.contactinfo {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #f5c7fa;
+    padding: 1rem;
+    border: 1px solid #717171;
+    text-align: center;
+    margin: 1rem;
+}
+
+main.contact h1 {
+    font-size: 4rem;
+    font-variant: small-caps;
+}
+
+main.contact a {
+    color: #9200cc;
+    text-decoration: none;
+}
+
+main.contact a:hover {
+    text-decoration: underline;
+}
+
+main.contact a:active {
+    color:#c739ff
+}
+
+@media screen and (min-width: 80rem) {   
+    main.contact h2 {
+        font-size: 2.5rem;
+    }
+    main.contact p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 43rem) {
+    main.contact h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* END CONTACT */
