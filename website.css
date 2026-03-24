@@ -10,6 +10,26 @@ body {
     font-size: 1.2rem;
 }
 
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
 header {
     grid-row: 1 / 2;
     background-color: #862790;
@@ -666,6 +686,10 @@ main.resume a:hover {
 
 main.resume a:active {
     color:#c739ff;
+}
+
+p.resume {
+    text-align: center;
 }
 
 /* END RESUME */
