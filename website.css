@@ -334,7 +334,7 @@ div.portfoliop {
     margin: 1rem;
 }
 
-div.feasibility {
+div.manual {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-image: linear-gradient(#dcf9f8, #d2f0fb);
@@ -346,13 +346,13 @@ div.creative {
     background-image: linear-gradient(#f2faba, #f5f9af);
 }
 
-div.tutoring {
+div.grant {
     grid-column: 2 / 3;
     grid-row: 6 / 7;
     background-image: linear-gradient(#d1fbde, #c6fae6);
 }
 
-div.lit {
+div.tutoring {
     grid-column: 2 / 3;
     grid-row: 8 / 9;
     background-image: linear-gradient(#ffeac2, #ffe1b2);
