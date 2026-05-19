@@ -288,7 +288,7 @@ img.homepage {
 main.portfolio {
     display: grid;
     grid-template-columns: 0.08fr 1fr 0.08fr;
-    grid-template-rows: auto 1fr 40px 1fr 40px 1fr 40px 1fr 40px;
+    grid-template-rows: auto 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr 40px;
 }
 
 main.portfolio > h1 {
@@ -337,25 +337,37 @@ div.portfoliop {
 div.manual {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-image: linear-gradient(#dcf9f8, #d2f0fb);
+    background-image: linear-gradient(#d2dbfb, #dce4f9);
+}
+
+div.accessibility {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-image: linear-gradient(#dcf9f8, #d2f0fb)
 }
 
 div.creative {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    background-image: linear-gradient(#f2faba, #f5f9af);
-}
-
-div.grant {
     grid-column: 2 / 3;
     grid-row: 6 / 7;
     background-image: linear-gradient(#d1fbde, #c6fae6);
 }
 
-div.tutoring {
+div.grant {
     grid-column: 2 / 3;
     grid-row: 8 / 9;
-    background-image: linear-gradient(#ffeac2, #ffe1b2);
+    background-image: linear-gradient(#f2faba, #f5f9af);
+}
+
+div.research {
+    grid-column: 2 / 3;
+    grid-row: 10 / 11;
+    background-image: linear-gradient(#ffeac2, #ffe1b2)
+}
+
+div.tutoring {
+    grid-column: 2 / 3;
+    grid-row: 12 / 13;
+    background-image: linear-gradient(#ffc0b2, #ffc2c2);
 }
 
 @media screen and (max-width: 43rem) {
@@ -722,7 +734,7 @@ div.contactinfo {
 }
 
 main.contact h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-variant: small-caps;
 }
 
