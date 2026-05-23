@@ -491,13 +491,13 @@ div.graphiteleft.tuc {
     grid-row: 4 / 5;
 }
 
-div.takeupcross {
+div.thekingseyes {
     grid-column: 3 / 4;
     grid-row: 4 / 5;
     background-color: #ffff76;
 }
 
-div.takeupcross > h2, div.takeupcross > .texttype {
+div.thekingseyes > h2, div.thekingseyes > .texttype {
     text-align: right;
 }
 
